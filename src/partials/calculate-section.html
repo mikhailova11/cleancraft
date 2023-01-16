@@ -1,0 +1,39 @@
+<form class="calculate" id="calculate">
+   
+  <div class="calculate_container">
+    <p class="calculate-title">Калькулятор</p>
+    <select class="calculate_select" name="service" required="required">
+      <option value="">Какой вид уборки Вас интересует</option>
+      <option value="1">Поддерживающая уборка</option>
+      <option value="2">Уборка после ремонта</option>
+      <option value="3">Мытье окон</option>
+      <option value="4">Генеральная уборка</option>
+    </select>
+  
+    <div class="calculate_counter">
+      <p class="calculate_counter_title">Укажите количество комнат</p>
+      <div class="counter-room" id="counter-room">
+        <button class="minus-room calculate_btn"  type="button">-</button> 
+        <span id="valueRoom">0</span>
+        <button class="plus-room calculate_btn"  type="button">+</button> 
+      </div>
+    </div>
+
+    <div class="calculate_counter">
+      <p class="calculate_counter_title">Укажите количество санузлов</p>
+      <div class="counter-bath" id="counter-bath">
+        <button class="minus-bath calculate_btn"  type="button">-</button> 
+        <span id="valueBath">0</span>
+        <button class="plus-bath calculate_btn"  type="button">+</button> 
+      </div>
+    </div>
+  
+    <div class="calculate-summa">
+      <p class="calculate-summa calculate-summa-span">Сумма:<span class="calculate-summa-span" id="result"> 0</span>
+      грн
+    </p>
+    </div>
+
+  </div>
+
+  </form>
